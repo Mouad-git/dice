@@ -1,0 +1,82 @@
+/* Container principal */
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 40px auto;
+  flex-wrap: wrap;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#résultat{
+   display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style des images de dés */
+#container img {
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 15px;
+
+  padding: 10px;
+}
+
+
+/* Animation au clic sur "Jouer" */
+.roll {
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(10deg); }
+  40% { transform: rotate(-10deg); }
+  60% { transform: rotate(5deg); }
+  80% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Bouton stylé */
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Message "You Win" stylé (optionnel) */
+.win-message {
+  text-align: center;
+  font-size: 22px;
+  color: #27ae60;
+  font-weight: bold;
+  margin-top: 15px;
+  animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

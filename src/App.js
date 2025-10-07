@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import ConteurState from './components/ConteurState';
+
+import Dice from './components/Dice';
+
+//const user=[{nom:"Mouad", prenom:"Nouzri"},
+//            {nom:"Amine", prenom:"EL GUATE"}
+//]
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+
+    <Dice />
+
+    </>
+  )
+    //<div className="App">
+    //  <Persons users={user}/>
+    //</div>
+    
+
 }
 
 export default App;
